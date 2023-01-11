@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+  }
+
+
+
+  @keyframes bgcolor {
+    0% {
+        background-color: #ffffff
+    }
+
+    50% {
+        background-color: #000000
+    }
+
+    100% {
+        background-color: #ffffff
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 30s infinite;
+    animation: bgcolor 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bgcanvas {
+  0% {
+      background-color: #000000
+  }
+
+  50% {
+      background-color: #ffffff
+  }
+
+  100% {
+      background-color: #000000
+  }
+}
+
+  
+  #canvas {
+    border-radius: 5px;
+    -webkit-animation: bgcanvas 30s infinite;
+    animation: bgcanvas 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  
+  #menuP {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+  }
+  
+  #menuP #tarjeta {
+    background-color: white;
+    width: 500px;
+    height: 190px;
+    border-radius: 5px;
+    display: none;
+    animation: animacionT 1s forwards;
+    box-shadow: 0 10px 14px rgba(0,0,0,0.2);
+  }
+  
+  #menuP #tarjeta > p {
+    font-size: 50px;
+    margin-top: 10px;
+    user-select: none;
+  }
+  
+  #menuP #tarjeta > button {
+    outline: none;
+    color: white;
+    border: none;
+    background-color: rgb(99, 27, 255);
+    padding: 10px;
+    width: 90%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  @keyframes animacionT {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .titulo11{
+    color: rgb(99, 27, 255);
+  }
