@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+  }
+
+
+
+
+
+
+#pasarpag{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.593);
+    border-radius: 50px;
+    position: relative;
+    left: 1400px;
+    bottom: 450px;
+    transition: all 0.5s;
+}
+
+#pasarpag a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 70px;
+    margin-left: 35px;
+    top: 10px;
+}
+
+#pasarpag:hover{
+    transform: translateY(-15px);
+    background-color: rgba(255, 255, 255, 0.821);
+}
+
+#pasarpag a:hover{
+    color: black;
+}

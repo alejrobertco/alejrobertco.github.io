@@ -1,0 +1,57 @@
+
+  @keyframes bgcolor {
+    0% {
+        background-color: #ffffff
+    }
+
+    50% {
+        background-color: #000000
+    }
+
+    100% {
+        background-color: #ffffff
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 30s infinite;
+    animation: bgcolor 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+
+
+@keyframes bgcanvas {
+    0% {
+        background-color: #000000
+    }
+  
+    50% {
+        background-color: #ffffff
+    }
+  
+    100% {
+        background-color: #000000
+    }
+  }
+  
+    
+    #canvas {
+      border-radius: 5px;
+      -webkit-animation: bgcanvas 30s infinite;
+      animation: bgcanvas 20s infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+    }
